@@ -4,14 +4,16 @@
 
 
 
-## 程序说明
+## 🍀程序说明
 这个小程序不全是我写的，主要体系是vczero大佬写的，下面是源仓库
 - [大佬的原生项目](https://github.com/vczero/CloudPhoto)
 
 但是呢，大佬的图片展示页面不符合我的审美（左边是大佬的，右边是我的），于是乎，你知道的
+
 <img src="https://pcdn.wxiou.cn//20200909120727.jpg" alt="图片替换文本" width="180" height="360" align="bottom" /><img src="https://pcdn.wxiou.cn//20200909120553.jpg" alt="图片替换文本" width="180" height="360" align="bottom" />
 
 首页我也改了改，icon改了改，底部加了个版权信息，希望大佬不介意
+
 <img src="https://pcdn.wxiou.cn//20200909120852.jpg" alt="图片替换文本" width="180" height="360" align="bottom" /><img src="https://pcdn.wxiou.cn//20200909113101.jpg" alt="图片替换文本" width="180" height="360" align="bottom" />
 
 
@@ -27,7 +29,7 @@
 <img src="https://pcdn.wxiou.cn//20200909113101.jpg" alt="图片替换文本" width="180" height="360" align="bottom" /><img src="https://pcdn.wxiou.cn//20200909113132.jpg" alt="图片替换文本" width="180" height="360" align="bottom" /><img src="https://pcdn.wxiou.cn//20200909113157.jpg" alt="图片替换文本" width="180" height="360" align="bottom" /><img src="https://pcdn.wxiou.cn//20200909113313.jpg" alt="图片替换文本" width="180" height="360" align="bottom" /><img src="https://pcdn.wxiou.cn//20200909113339.jpg" alt="图片替换文本" width="180" height="360" align="bottom" />
 
 
-## 实现过程
+## 🌺实现过程
 
 使用 `wx.chooseImage` 选择图片，使用 `wx.cloud.uploadFile` 上传图片并获取到图片的 `fileID`，传给云函数`imgCheck`检测图片是否合规，如果合规，则上传图片，如果不合规，则拒绝上传图片。
 
@@ -50,7 +52,7 @@
 * 5.图片大于20M，直接不给上传，官方上传接口限制20M
 
 
-## 更新日志
+## 🎁更新日志
 
 #### v0.1
 * 2020-06-07 完成图片展示页面的更新，美化（也不算很美）上传按钮
@@ -64,13 +66,13 @@
 
 
 
-## 开放计划
+## ⌛开放计划
 
 * 10月份国庆之前完成华为云AI的接入（主要是现在的图片一个比一个大，不得不接入了）
 
 
 
-## 安装过程
+## 🔨安装过程
 #### 1、下载源码，并开通百度智能云API
 - [百度智能云](https://cloud.baidu.com/)
 
@@ -87,10 +89,9 @@
 
 #### 3、修改配置
 点击云开发，新建一个环境，名称随意
-![](https://pcdn.wxiou.cn//20200826133545.png)
+
 
 新建以后可以得到云环境id
-![](https://pcdn.wxiou.cn//20200909121134.png)
 
 
 填入`app.js`文件
@@ -131,13 +132,13 @@
 如有问题，请提issues
 
 
-## 关于广告
+## 💰关于广告
 
 目前的版本没有加入广告
 
 
 
-## 参考文档
+## 📭参考文档
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 - [百度云内容审核接口文档](https://ai.baidu.com/ai-doc/ANTIPORN/Jk3h6x8t2)
