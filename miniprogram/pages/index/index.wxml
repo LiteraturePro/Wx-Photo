@@ -1,0 +1,64 @@
+<view class="container">
+  <view class="banner">
+    <view>
+      <text>每一张图片都值得认真对待</text>
+      <text>欢迎使用一条分割线，进行图片分类管理</text>
+    </view>
+  </view>
+  <view class="block">
+    <view bindtap="goToCategory" data-type="家庭相册">
+      <image mode="aspectFit" src="../../images/001.png"></image>
+      <text>家庭相册</text>
+    </view>
+    <view bindtap="goToCategory" class="left-border" data-type="亲朋相册">
+      <image mode="aspectFit" src="../../images/002.png"></image>
+      <text>亲朋相册</text>
+    </view>
+    <view bindtap="goToCategory" class="left-border" data-type="自拍">
+      <image mode="aspectFit" src="../../images/003.png"></image>
+      <text>个人自拍</text>
+    </view>
+    <view bindtap="goToCategory" class="top-border" data-type="票据管理">
+      <image mode="aspectFit" src="../../images/005.png"></image>
+      <text>票据管理</text>
+    </view>
+    <view bindtap="goToCategory" class="top-border left-border" data-type="说明书管理">
+      <image mode="aspectFit" src="../../images/004.png"></image>
+      <text>礼账管理</text>
+    </view>
+    <view bindtap="goToCategory" class="top-border left-border" data-type="车船票留念">
+      <image mode="aspectFit" src="../../images/006.png"></image>
+      <text>车船票留念</text>
+    </view>
+    <view bindtap="goToCategory" class="top-border" data-type="风景照片">
+      <image mode="aspectFit" src="../../images/007.png"></image>
+      <text>风景美如画</text>
+    </view>
+    <view bindtap="goToCategory" class="top-border left-border" data-type="知识碎片">
+      <image mode="aspectFit" src="../../images/008.png"></image>
+      <text>知识碎片</text>
+    </view>
+    <view bindtap="goToCategory" class="top-border left-border" data-type="青春纪念册">
+      <image mode="aspectFit" src="../../images/009.png"></image>
+      <text>青春纪念册</text>
+    </view>
+
+    <view bindtap="goToCategory" class="top-border left-border" data-type="宠物精灵">
+      <image mode="aspectFit" src="../../images/010.png"></image>
+      <text>宠物精灵</text>
+    </view>
+    <view bindtap="goToCategory" class="top-border left-border" data-type="世界那么大">
+      <image mode="aspectFit" src="../../images/011.png"></image>
+      <text>世界那么大</text>
+    </view>
+    <view bindtap="goToCategory" class="top-border left-border" data-type="其他">
+      <image mode="aspectFit" src="../../images/012.png"></image>
+      <text>其他</text>
+    </view>
+  </view>
+
+  <view>
+  <navigator class="help-button" url="/pages/help/help">\n了解更多</navigator>
+        <text class='copyright'>🎯 v1.0.0\n Powered by Literature\n 云开发提供计算服务@2020 \nCopyright (c) 2020 Literature</text>
+    </view>
+</view>

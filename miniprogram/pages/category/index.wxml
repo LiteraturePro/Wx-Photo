@@ -1,0 +1,58 @@
+
+<scroll-view scroll-y="true" enable-back-to-top="true" style="height:{{height}}px">
+   <!--<view class="container"> -->
+
+  <view class="foot-left">
+    <!-- <view wx:if="{{items.length}}" bindtap="doPreview" bindlongpress="doDelete" style="width:{{width/3}}px;height:{{width/3}}px" wx:for="{{items}}" wx:key="{{index}}" data-objid="{{items[index]._id}}" data-objurl="{{items[index].tempFileURL}}" data-fileid="{{items[index].fileID}}"> -->
+    <view wx:if="{{items.length}}" bindtap="doPreview" bindlongpress="doDelete"  wx:for="{{items}}" wx:key="{{index}}" data-objid="{{items[index]._id}}" data-objurl="{{items[index].tempFileURL}}" data-fileid="{{items[index].fileID}}">
+    <view class="footbox" wx:if="{{index%2==0}}">
+      <!-- <image mode="widthFix" style="width:{{width/3}}px;height:{{width/3}}px" src="{{items[index].tempFileURL}}"></image>  -->
+      <image mode="widthFix"  src="{{items[index].tempFileURL}}"></image> 
+     </view>
+     </view>
+   </view>
+
+  <view class="foot-right">
+    <!-- <view wx:if="{{items.length}}" bindtap="doPreview" bindlongpress="doDelete" style="width:{{width/3}}px;height:{{width/3}}px" wx:for="{{items}}" wx:key="{{index}}" data-objid="{{items[index]._id}}" data-objurl="{{items[index].tempFileURL}}" data-fileid="{{items[index].fileID}}"> -->
+    <view wx:if="{{items.length}}" bindtap="doPreview" bindlongpress="doDelete"  wx:for="{{items}}" wx:key="{{index}}" data-objid="{{items[index]._id}}" data-objurl="{{items[index].tempFileURL}}" data-fileid="{{items[index].fileID}}">
+    <view class="footbox" wx:if="{{index%2==1}}" >
+      <!-- <image mode="widthFix" style="width:{{width/3}}px;height:{{width/3}}px" src="{{items[index].tempFileURL}}"></image>  -->
+      <image mode="widthFix"  src="{{items[index].tempFileURL}}"></image> 
+    </view>
+  </view>
+  </view>
+
+ 
+    <view wx:if="{{items.length == 0}}" class="show-tip">你还没有上传任何图片，赶紧上传吧</view>
+    <view class="action" wx:if="{{count > 0}}">
+      <view class="show-tip">共 {{count}} 张照片，当前 {{current_page}}/{{total_page}} 页</view>
+      <view class="action-btn" wx:if="{{total_page >= 2}}">
+        <text wx:if="{{current_page > 1}}" bindtap="doPrePage">上一页</text>
+        <text wx:if="{{current_page < total_page}}" bindtap="doNextPage">下一页</text>
+      </view>
+    </view>
+
+</scroll-view>
+
+<!--圆形点击框  -->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">📣 相关说明</view>
+  <view class="modal-content">
+    <text>🍀 已接入原生图片审核、百度AI审核服务，请自觉遵守法律法规！\n\n</text>
+    <text>🍄 后台采用OpenID鉴权，只有上传者才能查看相关上传内容! \n\n</text>
+    <text>🌴 长按可删除图片! \n\n</text>
+  </view>
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">了解</view>
+  </view>
+</view>
+<!-- <view>
+  <text class='copyright'>📣 长按删除</text>
+</view> -->
+ <menu hidden id='menu' 
+       bind:inspection="onInspection"
+       bind:check="doUpload" />
+<canvas class="canvas" canvas-id="canvas" style="width:{{cWidth}}px;height:{{cHeight}}px;visibility: hidden;position:absolute;z-index:-1; left:-10000rpx;top:-10000rpx;"></canvas>
+   

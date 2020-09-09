@@ -1,0 +1,28 @@
+<!--pages/help/help.wxml-->
+
+<view class="result-card">
+<view class="card-title">🌴 关于我们</view>
+
+<view class="card-text">
+基于百度人工智能接口和微信云开发功能，开发的个人相册小程序。无需登录授权就能使用。有任何使用问题或需求，可点击下方的「联系客服」按钮反馈。大家觉得这个小程序还不错的话，欢迎点击右上角三个点，将小程序添加到“我的小程”。祝大家使用开心。
+</view>
+
+<view class="card-title">🍄程序声明</view>
+<view class="card-text">
+1、本程序采用后台鉴权，用户任何上传的信息，只有该用户可查看，已接入原生图片审核、百度AI图片审核服务，请用户遵循法律规范，不得上传非法图片 
+</view>
+<view class="card-text">
+2、本程序是一个开源项目，遵循MIT开源协议，喜欢钻研的朋友可到开源社区查看相关信息
+</view>
+<view  class="card-title" bindtap='copyText' data-text="{{contents}}">Github(点击复制地址)，喜欢记得Star⭐</view>
+
+<view class="card-title">🎉 关注我们</view>
+<view class="card-text">
+推荐大家关注我们的公众号：一条分割线。（点击二维码查看大图，长按保存）
+</view>
+
+<image class="qrcode" src="https://pcdn.wxiou.cn//20200826170456.jpg" mode="aspectFit" bindtap="preview"></image>
+
+</view>
+
+<button class="button help-button" open-type="contact" bindcontact="handleContact">联系客服</button>
