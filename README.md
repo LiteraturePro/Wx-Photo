@@ -3,21 +3,6 @@
 使用小程序云开发和百度云的 ai 接口做的一个相册小程序。
 
 
-
-## 🍀程序说明
-
-图片展示页面不符合我的审美，于是乎，你知道的
-
-<img src="https://pcdn.wxiou.cn//20200909120727.jpg" alt="图片替换文本" width="180" height="360" align="bottom" /><img src="https://pcdn.wxiou.cn//20200909120553.jpg" alt="图片替换文本" width="180" height="360" align="bottom" />
-
-首页我也改了改，icon改了改，底部加了个版权信息，
-
-<img src="https://pcdn.wxiou.cn//20200909120852.jpg" alt="图片替换文本" width="180" height="360" align="bottom" /><img src="https://pcdn.wxiou.cn//20200909113101.jpg" alt="图片替换文本" width="180" height="360" align="bottom" />
-
-
-
-
-
 #### 体验
 
 ![小程序码](https://pcdn.wxiou.cn//20200909112453.jpg)
