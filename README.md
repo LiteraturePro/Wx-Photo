@@ -4,18 +4,13 @@
 
 
 ## 更新！！！
-即将发布新玩法
-[玩法1](https://pcdn.wxiou.cn/20210221165642.mp4)
-[玩法2](https://pcdn.wxiou.cn/20210221165705.mp4)
-
-
+#### V2.0.3版本截图
+<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f8e0850c-4117-4be7-bc69-4d4c4ea2d930/81469b4b-77e9-402b-8ade-757aa6eb19db.jpg" alt="图片替换文本" width="160" height="360" align="bottom" /><img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f8e0850c-4117-4be7-bc69-4d4c4ea2d930/371a93c9-fc44-4106-8635-829f3d8f090d.jpg" alt="图片替换文本" width="160" height="360" align="bottom" /><img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f8e0850c-4117-4be7-bc69-4d4c4ea2d930/f69189ed-86a0-4c06-88b6-2ac77b0e13f6.jpg" alt="图片替换文本" width="160" height="360" align="bottom" /><img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f8e0850c-4117-4be7-bc69-4d4c4ea2d930/bd8c465a-f5d9-42fb-ae3e-be04d26077e3.jpg" alt="图片替换文本" width="160" height="360" align="bottom" /><img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f8e0850c-4117-4be7-bc69-4d4c4ea2d930/facd71ec-a40e-4bc8-a857-d204b5d036ba.jpg" alt="图片替换文本" width="160" height="360" align="bottom" /><img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f8e0850c-4117-4be7-bc69-4d4c4ea2d930/3c10f522-60c2-4ba4-ab9f-a00969d0c247.jpg" alt="图片替换文本" width="160" height="360" align="bottom" />
 
 #### 体验
+<img src="https://pcdn.wxiou.cn//20200909112453.jpg" alt="图片替换文本" width="200" height="200" align="bottom" />
 
-![小程序码](https://pcdn.wxiou.cn//20200909112453.jpg)
-
-
-#### 截图
+#### V1.0.0版本截图
 <img src="https://pcdn.wxiou.cn//20200909113101.jpg" alt="图片替换文本" width="180" height="360" align="bottom" /><img src="https://pcdn.wxiou.cn//20200909113132.jpg" alt="图片替换文本" width="180" height="360" align="bottom" /><img src="https://pcdn.wxiou.cn//20200909113157.jpg" alt="图片替换文本" width="180" height="360" align="bottom" /><img src="https://pcdn.wxiou.cn//20200909113313.jpg" alt="图片替换文本" width="180" height="360" align="bottom" /><img src="https://pcdn.wxiou.cn//20200909113339.jpg" alt="图片替换文本" width="180" height="360" align="bottom" />
 
 
@@ -44,21 +39,24 @@
 
 ## 🎁更新日志
 
-#### v0.1
+#### v1.0.0
 * 2020-06-07 完成图片展示页面的更新，美化（也不算很美）上传按钮
 * 2020-07-19 接入原生官方审核接口完成（本地审核）
 * 2020-07-23 新增”了解更多“页面
 
-#### v0.2
+#### v1.2.0
 * 2020-08-26 修改第一版中AK以及SK暴露在代码中引起的安全问题，修改为云环境端变量，进行传参
 * 2020-08-26 原生官方接口在本地调用审核图片时，图片过小失真以至于违规图不能被识别的问题---解决方案：将审核过程放在云函数，新增云函数`imgCheck`
 * 2020-08-28 图片超过官方限制不能审核的问题---解决方案：接入百度云AI审核，新增云函数`get_taken`，作用是获得百度云token供本地调用
 
+#### v2.0.3
+* 2021-07-26 重构页面布局，新增`AI智能处理模块`
+* 2021-07-29 构建后端服务API并部署服务器
+* 2021-07-31 本地调试，部署上线
 
+## ⌛开发计划
 
-## ⌛开放计划
-
-* 10月份国庆之前完成华为云AI的接入（主要是现在的图片一个比一个大，不得不接入了）
+* 将支持短视频存储......
 
 
 
@@ -125,8 +123,9 @@
 
 ## 💰关于广告
 
-目前的版本没有加入广告
+* v1版本没有加入广告
 
+* v2版本考虑加入广告
 
 
 ## 📭参考文档
